@@ -1,6 +1,6 @@
 # Overview
 
-Regions Lister is a sample project that uses the [Management API Golang client](https://github.com/noprysk-ua/managementapisdk).
+Regions Lister is a sample project that uses the [Management API Golang client](https://github.com/singlestore-labs/singlestore-go).
 
 ## Requirements
 

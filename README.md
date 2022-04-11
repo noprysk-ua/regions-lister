@@ -4,7 +4,7 @@ Regions Lister is a sample project that uses the [Management API Golang client](
 
 ## Requirements
 
-The only requirement is a SingleStore API key. To get an API key follow [this](https://docs.singlestore.com/managed-service/en/developer-resources/management-api.html) doc page. Once it's done export it.
+The only requirement is a SingleStore API key. To get an API key follow [this](https://docs.singlestore.com/managed-service/en/reference/management-api.html#generate-an-api-key-729524) doc page. Once it's done export it.
 
 ```
 export API_KEY="my-key"
@@ -27,4 +27,4 @@ docker run -v $(pwd):/tmp/regions-lister --workdir /tmp/regions-lister -e API_KE
 ## Resources
 
  * [SDK](https://github.com/singlestore-labs/singlestore-go)
- * [Documentation](https://docs.singlestore.com/managed-service/en/developer-resources/management-api.html)
+ * [Documentation](https://docs.singlestore.com/managed-service/en/reference/management-api.html#generate-an-api-key-729524)

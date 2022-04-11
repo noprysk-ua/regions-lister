@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/noprysk-ua/managementapisdk"
+	"github.com/singlestore-labs/singlestore-go/management"
 )
 
 const apiServiceURL = "https://api.singlestore.com"
@@ -19,8 +19,8 @@ func main() {
 		log.Fatal("Environmental variable $API_KEY should be set, visit https://docs.singlestore.com/managed-service/en/reference/management-api.html for details")
 	}
 
-	client, err := managementapisdk.NewClientWithResponses(apiServiceURL,
-		managementapisdk.WithRequestEditorFn(func(ctx context.Context, req *http.Request) error {
+	client, err := management.NewClientWithResponses(apiServiceURL,
+		management.WithRequestEditorFn(func(ctx context.Context, req *http.Request) error {
 			req.Header.Set("Authorization", fmt.Sprintf("Bearer %s", apiKey))
 			return nil
 		}),

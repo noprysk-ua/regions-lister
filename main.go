@@ -29,7 +29,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	regions, err := client.GetV0betaRegionsWithResponse(context.TODO())
+	regions, err := client.GetV2RegionsWithResponse(context.TODO(), &management.GetV2RegionsParams{})
 	if err != nil {
 		log.Fatal(err)
 	}
